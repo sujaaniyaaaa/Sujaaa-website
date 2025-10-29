@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Book Shop</title>
+  <style>
+    /* Rainbow gradient background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Card container */
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      color: #ff0080;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #ff00ff;
+      outline: none;
+      box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>📚 Rainbow Book Shop</h1>
+    <p>Join our readers’ community! Fill in your details below.</p>
+
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <footer>© 2025 Rainbow Book Shop</footer>
+  </div>
+
+</body>
+</html>
